@@ -1,2 +1,6 @@
-def one_for_loop():
-pass
+def one_for_loop(size=4, char='*'):
+    box = ''
+    line = char * size + "\n"
+    for i in range (size):
+        box = box + line
+    return box

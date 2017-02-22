@@ -1,2 +1,9 @@
-def nested_for_loops():
-pass
+def variable_size_box(size=4, char='*'):
+    box=""
+    for i in range (size):
+        line = ""
+        for j in range (size):
+            line = line + char
+        line= line +"\n"
+        box= box+line
+    return box
